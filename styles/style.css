@@ -1,8 +1,8 @@
 .page {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   padding: 0;
 }
 
@@ -13,10 +13,9 @@
   display: flex;
   position: relative;
   background-color: #f2f2f2;
-  overflow: hidden;
   margin: 0;
-  padding: 0;
-
+  flex-direction: row;
+  overflow: hidden;
 }
 
 .logo {
@@ -30,6 +29,7 @@
   width: 228px;
   height: 32px;
   z-index: 2;
+
 }
 
 .header__title {
@@ -39,8 +39,8 @@
   font-weight: 600;
   margin-left: 64px;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
 
 }
 
@@ -54,40 +54,115 @@
   margin-bottom: 30px;
   margin-left: 64px;
   align-self: flex-end;
+
 }
 
-.header__link {
+.header__subtitle_link {
   text-decoration: none;
 }
 
 .header__main-illustration {
   height: 765px;
   width: 608px;
-  display: flex;
-  box-sizing: border-box;
   position: absolute;
-  right: 0;
   bottom: 0;
+  right: 0;
   order: 1;
   z-index: 1;
+
+}
+
+.main-illustration {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .header__square-pic {
   width: 568px;
   height: 568px;
-  position: absolute;
+  background-position: right;
   background-color: #2f80ed;
-  background-size: cover;
-  top: 64px;
+  background-size: 568px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
   right: 0;
+}
 
+.content {
+  margin: 0;
+  padding: 0;
 
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.description {
+  margin-top: 100px;
+}
+
+.two-columns {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.two-columns__brief {
+  margin: 0;
+  width: 175px;
+  line-height: 1.2;
+  color: #2f80ed;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  margin: 0;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  padding-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:last-of-type {
+  padding-bottom: 0;
+}
+
+.conclusion_span-accent {
+  font-weight: 600;
+}
+
+
+.digits {
+  padding-top: 100px;
+  width: 100%;
+  margin: 0;
+}
+
+.section-title {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0 20px 20px;
+}
+
+.section-subtitle {
+  margin: 0 auto;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
 }
