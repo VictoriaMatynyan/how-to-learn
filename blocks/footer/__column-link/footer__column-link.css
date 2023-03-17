@@ -4,4 +4,10 @@
   font-size: 16px;
   font-weight: normal;
   color: white;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.footer__column-link:hover {
+  opacity: 0.5;
 }
