@@ -11,5 +11,5 @@
 * transition, animation and transformation + keyframes.
 ## Design brief
 [Link](https://code.s3.yandex.net/web-developer/project-1/sprint-1-brief.pdf).
-## To be improve
+## To be improved
 Make the web site's design is adaptive and responsive.
